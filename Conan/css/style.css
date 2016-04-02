@@ -103,6 +103,10 @@ td {
 	text-align: center;"
 }
 
+.StressHarm{
+	background-color: rgb(225, 225, 214);	
+}
+
 #vigor1{
 	background-color: #E1E1D6;
 
@@ -111,6 +115,8 @@ td {
 .red-cell {
    background: #F00; /* Or some other color */
 }
+
+
 
 /*	r63  g66  b11   h42 s171 l36
 	r255 g255 b213  h40 s40  l206
