@@ -21,7 +21,6 @@ table{
 	border-collapse:collapse;
 	width: 100%;
 
-	margin-right: 1%;
 	margin-bottom: 10px;
 }
 
@@ -56,13 +55,17 @@ td {
 }
 
 .AttributesSkills{
-	display: flex;
+	/*display: flex;*/
+}
+
+.Combat{
+	display: flex;	
 }
 
 .Column{
 	width: 50%;
 	margin-right: 5pt;
-	margin-left: 5pt
+	margin-left: 5pt	
 }
 
 /*Table*/
@@ -100,6 +103,10 @@ td {
 	text-align: center;"
 }
 
+#vigor1{
+	background-color: #E1E1D6;
+	
+}
 
 /*	r63  g66  b11   h42 s171 l36
 	r255 g255 b213  h40 s40  l206
