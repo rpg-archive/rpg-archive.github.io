@@ -96,14 +96,16 @@
 				          <option value="58">58</option>
 				          <option value="59">59</option>
 				          <option value="60">60</option>
-				  </select>
+				  </select> -->
 
-				<input type="submit" value="Roll Dice">  
+<!-- 				<input type="submit" value="Roll Dice">  
 				<input type="reset" value="Reset Form">
 
 				<button onclick="d20()">d20</button>
 				<p id="demo"></p> -->
 
+
+				<!-- Stress and Harm -->
 				<div class="Combat">
 					<div class="Column">
 						<table>
@@ -186,35 +188,179 @@
 					</div>	
 				</div>
 
-				<div class="Column">
+				<!-- Soak -->
+				<div class="Combat">
+					<div class="Column">
+						<table>
+							<tbody>
+								<tr  class="Ability">
+									<td class="Value" colspan="2">
+										Soak
+									</td>
+								</tr>
+
+								<tr>
+									<td class="SkillTitleBar">
+										Armor
+									</td>
+									<td class="CenterValue">
+										3 (Mail)
+									</td>
+								</tr>
+
+								<tr>
+									<td class="SkillTitleBar">
+										Courage
+									</td>
+									<td class="CenterValue">
+										2
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="Column">
+						<table>
+							<tbody>
+								<tr  class="Ability">
+									<td class="Value" colspan="4">
+										Successes
+									</td>
+								</tr>
+								<tr>
+									<td  class="SkillTitleBar">
+										Melee
+									</td>
+									<td class="W1Events">
+									
+									</td>
+									<td class="W1HitSuccesses" >
+										
+									</td>	
+									<td class="W1NumDice" >
+										<select id="num">
+									        <option value="1">1d20</option>
+									        <option value="2" selected="selected">2d20</option>
+									        <option value="3">3d20</option>
+									        <option value="4">4d20</option>
+									        <option value="5">5d20</option>
+									        <option value="6">6d20</option>
+									        <option value="7">7d20</option>
+									        <option value="8">8d20</option>
+									        <option value="9">9d20</option>
+									        <option value="10">10d20</option>
+								  		</select>
+									</td>	
+								</tr>
+
+								<tr>
+									<td  class="SkillTitleBar">
+										Ranged Weapon
+									</td>
+									<td class="W1Events">
+									
+									</td>
+									<td class="W1HitSuccesses" >
+										
+									</td>	
+									<td class="W1NumDice" >
+										<select id="num">
+									        <option value="1">1d20</option>
+									        <option value="2" selected="selected">2d20</option>
+									        <option value="3">3d20</option>
+									        <option value="4">4d20</option>
+									        <option value="5">5d20</option>
+									        <option value="6">6d20</option>
+									        <option value="7">7d20</option>
+									        <option value="8">8d20</option>
+									        <option value="9">9d20</option>
+									        <option value="10">10d20</option>
+								  		</select>
+									</td>	
+								</tr>
+
+								<tr>
+									<td  class="SkillTitleBar">
+										Parry
+									</td>
+									<td class="W1Events">
+									
+									</td>
+									<td class="W1HitSuccesses" >
+										
+									</td>	
+									<td class="W1NumDice" >
+										<select id="num">
+									        <option value="1">1d20</option>
+									        <option value="2" selected="selected">2d20</option>
+									        <option value="3">3d20</option>
+									        <option value="4">4d20</option>
+									        <option value="5">5d20</option>
+									        <option value="6">6d20</option>
+									        <option value="7">7d20</option>
+									        <option value="8">8d20</option>
+									        <option value="9">9d20</option>
+									        <option value="10">10d20</option>
+								  		</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>						
+					</div>
+				</div>	
+
+				<!-- Weapons -->
+				<div>
 					<table>
 						<tbody>
 							<tr  class="Ability">
-								<td class="Value" colspan="2">
-									Soak
+								<td class="Value" colspan="4">
+									Damage
 								</td>
 							</tr>
 
 							<tr>
-								<td class="SkillTitleBar">
-									Armor
+								<td class="SkillTitleBar" style="width: 50%">
+									Broardsword (M)
 								</td>
-								<td class="CenterValue">
-									3 (Mail)
-								</td>
+								<td class="CenterValue" colspan="3">
+									Reach 2, Unbalanced
+								</td>	
+								
 							</tr>
-
-							<tr>
-								<td class="SkillTitleBar">
-									Courage
+							<tr  class="Skills">						
+								<td>
+									Damage 7 <img src="images\d6.jpg" alt="d6" style="width:12px;height:14px;">
+								</td>	
+								<td class="W1Events">
+									
 								</td>
-								<td class="CenterValue">
-									2
-								</td>
+								<td class="W1HitSuccesses" >
+									
+								</td>	
+								<td class="W1NumDice" >
+									<select id="num">
+								        <option value="1">1d6</option>
+								        <option value="2">2d6</option>
+								        <option value="3">3d6</option>
+								        <option value="4">4d6</option>
+								        <option value="5">5d6</option>
+								        <option value="6">6d6</option>
+								        <option value="7" selected="selected">7d6</option>
+								        <option value="8">8d6</option>
+								        <option value="9">9d6</option>
+								        <option value="10">10d6</option>
+								        <option value="11">11d6</option>
+								        <option value="12">12d6</option>
+								        <option value="13">13d6</option>
+								        <option value="14">14d6</option>
+							  		</select>
+							  		<button onclick="d20">Roll</button>
+								</td>	
 							</tr>
 						</tbody>
-					</table>
-				</div>					
+					</table>				
+				</div>
 
 				<!-- Ability Scores and Skills -->
 				<div class="AttributesSkills">
