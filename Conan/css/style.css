@@ -145,6 +145,11 @@ td {
 	text-indent: 0pt;
 	text-align: center;
 }
+.LightGreenCellsLeft{
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+}
 
 /*Stress and Harm*/
 .StressHarm{
@@ -198,6 +203,18 @@ td {
 	text-align: center;	
 }
 .HitParryNd20{
+	width: 9%;
+
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+
+	text-indent: 0pt;
+	text-align: center;	
+}
+
+/*Damage*/
+.DamageNd6{
 	width: 9%;
 
 	background-color: rgb(225, 225, 214);

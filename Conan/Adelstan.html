@@ -35,69 +35,8 @@
 					</p>
 				</div>
 
-<!-- 				<select id="num">
-				          <option value="1">1</option>
-				          <option value="2" selected="selected">2</option>
-				          <option value="3">3</option>
-				          <option value="4">4</option>
-				          <option value="5">5</option>
-				          <option value="6">6</option>
-				          <option value="7">7</option>
-				          <option value="8">8</option>
-				          <option value="9">9</option>
-				          <option value="10">10</option>
-				          <option value="11">11</option>
-				          <option value="12">12</option>
-				          <option value="13">13</option>
-				          <option value="14">14</option>
-				          <option value="15">15</option>
-				          <option value="16">16</option>
-				          <option value="17">17</option>
-				          <option value="18">18</option>
-				          <option value="19">19</option>
-				          <option value="20">20</option>
-				          <option value="21">21</option>
-				          <option value="22">22</option>
-				          <option value="23">23</option>
-				          <option value="24">24</option>
-				          <option value="25">25</option>
-				          <option value="26">26</option>
-				          <option value="27">27</option>
-				          <option value="28">28</option>
-				          <option value="29">29</option>
-				          <option value="30">30</option>
-				          <option value="31">31</option>
-				          <option value="32">32</option>
-				          <option value="33">33</option>
-				          <option value="34">34</option>
-				          <option value="35">35</option>
-				          <option value="36">36</option>
-				          <option value="37">37</option>
-				          <option value="38">38</option>
-				          <option value="39">39</option>
-				          <option value="40">40</option>
-				          <option value="41">41</option>
-				          <option value="42">42</option>
-				          <option value="43">43</option>
-				          <option value="44">44</option>
-				          <option value="45">45</option>
-				          <option value="46">46</option>
-				          <option value="47">47</option>
-				          <option value="48">48</option>
-				          <option value="49">49</option>
-				          <option value="50">50</option>
-				          <option value="51">51</option>
-				          <option value="52">52</option>
-				          <option value="53">53</option>
-				          <option value="54">54</option>
-				          <option value="55">55</option>
-				          <option value="56">56</option>
-				          <option value="57">57</option>
-				          <option value="58">58</option>
-				          <option value="59">59</option>
-				          <option value="60">60</option>
-				  </select> -->
-
+<p id="debug">
+</p>
 <!-- 				<input type="submit" value="Roll Dice">  
 				<input type="reset" value="Reset Form">
 
@@ -228,6 +167,7 @@
 									Hit / Parry
 								</td>
 							</tr>
+							<!-- Melee Hit -->
 							<tr>
 								<td  class="GreenCells" id="MeleeHit">
 									Melee
@@ -258,10 +198,10 @@
 								<td  class="GreenCells" id="RangeHit">
 									Ranged Weapon
 								</td>
-								<td class="HitParryRolls">
+								<td class="HitParryRolls" id="RangeRolls">
 								
 								</td>
-								<td class="HitParryResults" >
+								<td class="HitParryResults" id="RangeResults">
 									
 								</td>	
 								<td class="HitParryNd20" >
@@ -284,10 +224,10 @@
 								<td  class="GreenCells" id="ParryHit">
 									Parry
 								</td>
-								<td class="HitParryRolls">
+								<td class="HitParryRolls" id="ParryRolls">
 								
 								</td>
-								<td class="HitParryResults" >
+								<td class="HitParryResults" id="ParryResults">
 									
 								</td>	
 								<td class="HitParryNd20" >
@@ -309,37 +249,37 @@
 					</table>						
 				</div>	
 
-				<!-- Weapons -->
-				<div>
+				<!-- Damage -->
+				<div class="Damage">
 					<table>
 						<tbody>
-							<tr  class="Ability">
+							<tr  class="BlackCells">
 								<td class="Value" colspan="4">
 									Damage
 								</td>
 							</tr>
 
 							<tr>
-								<td class="SkillTitleBar" style="width: 50%">
-									Broardsword (M)
+								<td class="GreenCells" id="BroadswordDMG" style="width: 50%">
+									Broadsword (M)
 								</td>
-								<td class="CenterValue" colspan="3">
+								<td class="LightGreenCells" colspan="3">
 									Reach 2, Unbalanced
 								</td>	
 								
 							</tr>
-							<tr  class="Skills">						
-								<td>
+							<tr>						
+								<td  class="LightGreenCellsLeft">
 									Damage 7 <img src="images\d6.jpg" alt="d6" style="width:12px;height:14px;">
 								</td>	
-								<td class="W1Events">
+								<td class="LightGreenCells" id="BroadswordRolls">
 									
 								</td>
-								<td class="W1HitSuccesses" >
+								<td class="LightGreenCells" id="BroadswordResults">
 									
 								</td>	
-								<td class="W1NumDice" >
-									<select id="num">
+								<td class="DamageNd6" >
+									<select id="BroadswordNd6">
 								        <option value="1">1d6</option>
 								        <option value="2">2d6</option>
 								        <option value="3">3d6</option>
@@ -355,7 +295,6 @@
 								        <option value="13">13d6</option>
 								        <option value="14">14d6</option>
 							  		</select>
-							  		<button onclick="d20">Roll</button>
 								</td>	
 							</tr>
 						</tbody>
@@ -507,10 +446,10 @@
 									<td>
 										Parry
 									</td>
-									<td class="Value">
+									<td class="Value" id="SkillParryTN">
 										13
 									</td>
-									<td class="Value">
+									<td class="Value" id="SkillParryFocus">
 										3
 									</td>
 								</tr>	
@@ -519,10 +458,10 @@
 									<td>
 										Ranged Weapons
 									</td>
-									<td class="Value">
+									<td class="Value" id="SkillRangeTN">
 										11
 									</td>
-									<td class="Value">
+									<td class="Value" id="SkillRangeFocus">
 										1
 									</td>
 								</tr>
