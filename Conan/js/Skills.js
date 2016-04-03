@@ -16,16 +16,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#AcrobaticsRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -55,16 +57,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#StealthRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -95,16 +99,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#InsightRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -134,16 +140,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#ObservationRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -173,16 +181,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#SurvivalRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -212,16 +222,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#ThieveryRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -252,16 +264,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#AthleticsRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -291,16 +305,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#ResistanceRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -331,16 +347,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#SailingRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -372,20 +390,22 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#AlchemyRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
-				} 
+				}  
 			}
 
 			$('#AlchemyResults').append(successComplication[0] + "S, ");
@@ -411,16 +431,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#CraftRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -450,16 +472,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#HealingRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -489,16 +513,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#LinguisticsRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -528,16 +554,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#LoreRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -567,16 +595,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#SiegecraftRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -607,16 +637,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#AnimalHandlingRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -646,16 +678,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#CommandRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -685,16 +719,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#CounselRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -724,20 +760,22 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#PersuadeRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
-				} 
+				}  
 			}
 
 			$('#PersuadeResults').append(successComplication[0] + "S, ");
@@ -763,20 +801,22 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#SocietyRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
-				} 
+				}  
 			}
 
 			$('#SocietyResults').append(successComplication[0] + "S, ");
@@ -803,16 +843,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#DisciplineRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -842,18 +884,20 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#SorceryRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
-				} else{
+				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
 				} 
 			}

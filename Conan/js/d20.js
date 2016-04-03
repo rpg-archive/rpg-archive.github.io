@@ -16,20 +16,23 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#MeleeRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
 				} 
+
 			}
 
 			$('#MeleeResults').append(successComplication[0] + "S, ");
@@ -54,16 +57,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#RangeRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
@@ -92,16 +97,18 @@ $(document).ready(function(){
 			for (i = 0; i < dieNum; i++) {
 				rolls[i] = getRandomInt(1, 20);
 
-				if( rolls[i] <= focus){
-					dieNum += 1;
-				}
+				// if( rolls[i] <= focus){
+				// 	dieNum += 1;
+				// }
 			}
 
 			// Determine Successes and Complications
 			for (i = 0; i < dieNum; i++) {
 				$('#ParryRolls').append(rolls[i] + " ");
 
-				if ( rolls[i] <= tn ){
+				if ( rolls[i] <= focus ){
+				 	successComplication[0] += 2;
+				} else if ( rolls[i] <= tn ){
 				 	successComplication[0] += 1;
 				} else if ( rolls[i] == 20 ){
 				 	successComplication[1] += 1;
