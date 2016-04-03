@@ -147,7 +147,156 @@ $(document).ready(function(){
 			$('#BroadswordResults').append(successEvents[1] + "E ");
 
 			$('#BroadswordNd6').prop('selectedIndex',6);
-		}							
+		}
+
+		// Damage Shield
+    	if ($(this).attr('id') == "ShieldDMG") {
+    		//Erase Privious Roll
+			$('#ShieldDMGRolls').html(" ");
+			$('#ShieldDMGResults').html(" ");
+			$('#debug').html(" ");
+
+			var rolls = [];
+			var successEvents = [0, 0];
+			var dieNum = parseInt($('#ShieldDMGNd6').val());
+
+			// Roll Dice
+			for (i = 0; i < dieNum; i++) {
+				rolls[i] = getRandomInt(1, 6);
+			}
+
+			// Determine Successes and Complications
+			for (i = 0; i < dieNum; i++) {
+				$('#ShieldDMGRolls').append(rolls[i] + " ");
+
+				if ( rolls[i] == 1 ){
+				  	successEvents[0] += 1;
+				} else if ( rolls[i] == 2 ){
+				  	successEvents[0] += 2;
+				} else if ( rolls[i] == 5 || rolls[i] == 6 ){
+				  	successEvents[0] += 1;	
+				  	successEvents[1] += 1;	
+				} 
+			}
+
+			$('#ShieldDMGResults').append(successEvents[0] + "S, ");
+			$('#ShieldDMGResults').append(successEvents[1] + "E ");
+
+			$('#ShieldDMGResults').prop('selectedIndex',3);
+		}
+
+		// Soak Shield
+    	if ($(this).attr('id') == "ShieldSoak") {
+    		//Erase Privious Roll
+			$('#ShieldSoakRolls').html(" ");
+			$('#ShieldSoakResults').html(" ");
+			$('#debug').html(" ");
+
+			var rolls = [];
+			var successEvents = [0, 0];
+			var dieNum = parseInt($('#ShieldSoakNd6').val());
+
+			// Roll Dice
+			for (i = 0; i < dieNum; i++) {
+				rolls[i] = getRandomInt(1, 6);
+			}
+
+			// Determine Successes and Complications
+			for (i = 0; i < dieNum; i++) {
+				$('#ShieldSoakRolls').append(rolls[i] + " ");
+
+				if ( rolls[i] == 1 ){
+				  	successEvents[0] += 1;
+				} else if ( rolls[i] == 2 ){
+				  	successEvents[0] += 2;
+				} else if ( rolls[i] == 5 || rolls[i] == 6 ){
+				  	successEvents[0] += 1;	
+				  	successEvents[1] += 1;	
+				} 
+			}
+
+			// Armor Bonus
+			$('#ShieldSoakRolls').append(" + 3 (Mail) ");
+			successEvents[0] += 3;
+
+			$('#ShieldSoakResults').append(successEvents[0] + "S, ");
+			$('#ShieldSoakResults').append(successEvents[1] + "E ");
+
+			$('#ShieldSoakResults').prop('selectedIndex',3);
+		}
+
+		// Light Crossbow
+    	if ($(this).attr('id') == "LCrossbowDMG") {
+    		//Erase Privious Roll
+			$('#LCrossbowRolls').html(" ");
+			$('#LCrossbowResults').html(" ");
+			$('#debug').html(" ");
+
+			var rolls = [];
+			var successEvents = [0, 0];
+			var dieNum = parseInt($('#LCrossbowNd6').val());
+
+			// Roll Dice
+			for (i = 0; i < dieNum; i++) {
+				rolls[i] = getRandomInt(1, 6);
+			}
+
+			// Determine Successes and Complications
+			for (i = 0; i < dieNum; i++) {
+				$('#LCrossbowRolls').append(rolls[i] + " ");
+
+				if ( rolls[i] == 1 ){
+				  	successEvents[0] += 1;
+				} else if ( rolls[i] == 2 ){
+				  	successEvents[0] += 2;
+				} else if ( rolls[i] == 5 || rolls[i] == 6 ){
+				  	successEvents[0] += 1;	
+				  	successEvents[1] += 1;	
+				} 
+			}
+
+			$('#LCrossbowResults').append(successEvents[0] + "S, ");
+			$('#LCrossbowResults').append(successEvents[1] + "E ");
+
+			$('#LCrossbowResults').prop('selectedIndex',3);
+		}
+
+		// Steel Glare
+    	if ($(this).attr('id') == "SteelyGlareDMG") {
+    		//Erase Privious Roll
+			$('#SteelyGlareRolls').html(" ");
+			$('#SteelyGlareResults').html(" ");
+			$('#debug').html(" ");
+
+			var rolls = [];
+			var successEvents = [0, 0];
+			var dieNum = parseInt($('#SteelyGlareNd6').val());
+
+			// Roll Dice
+			for (i = 0; i < dieNum; i++) {
+				rolls[i] = getRandomInt(1, 6);
+			}
+
+			// Determine Successes and Complications
+			for (i = 0; i < dieNum; i++) {
+				$('#SteelyGlareRolls').append(rolls[i] + " ");
+
+				if ( rolls[i] == 1 ){
+				  	successEvents[0] += 1;
+				} else if ( rolls[i] == 2 ){
+				  	successEvents[0] += 2;
+				} else if ( rolls[i] == 5 || rolls[i] == 6 ){
+				  	successEvents[0] += 1;	
+				  	successEvents[1] += 1;	
+				} 
+			}
+
+			$('#SteelyGlareResults').append(successEvents[0] + "S, ");
+			$('#SteelyGlareResults').append(successEvents[1] + "E ");
+
+			$('#SteelyGlareResults').prop('selectedIndex',1);
+		}
+
     });
 
     var dieNum;
