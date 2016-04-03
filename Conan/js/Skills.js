@@ -78,6 +78,84 @@ $(document).ready(function(){
 		}	
 
 
+		// Observation
+    	if ($(this).attr('id') == "ObservationSkill") {
+    		//Erase Privious Roll
+			$('#ObservationRolls').html(" ");
+			$('#ObservationResults').html(" ");
+			$('#debug').html(" ");
+
+			var rolls = [];
+			var successComplication = [0, 0];
+			var dieNum = parseInt($('#ObservationNd20').val());
+			var tn = parseInt($('#ObservationTN').html());
+			var focus = parseInt($('#ObservationFocus').html());
+
+			// Roll Dice
+			for (i = 0; i < dieNum; i++) {
+				rolls[i] = getRandomInt(1, 20);
+
+				if( rolls[i] <= focus){
+					dieNum += 1;
+				}
+			}
+
+			// Determine Successes and Complications
+			for (i = 0; i < dieNum; i++) {
+				$('#ObservationRolls').append(rolls[i] + " ");
+
+				if ( rolls[i] <= tn ){
+				 	successComplication[0] += 1;
+				} else if ( rolls[i] == 20 ){
+				 	successComplication[1] += 1;
+				} 
+			}
+
+			$('#ObservationResults').append(successComplication[0] + "S, ");
+			$('#ObservationResults').append(successComplication[1] + "C ");
+
+			$('#ObservationNd20').prop('selectedIndex',1);
+		}
+
+		// Animal Handling
+    	if ($(this).attr('id') == "AnimalHandlingSkill") {
+    		//Erase Privious Roll
+			$('#AnimalHandlingRolls').html(" ");
+			$('#AnimalHandlingResults').html(" ");
+			$('#debug').html(" ");
+
+			var rolls = [];
+			var successComplication = [0, 0];
+			var dieNum = parseInt($('#AnimalHandlingNd20').val());
+			var tn = parseInt($('#AnimalHandlingTN').html());
+			var focus = parseInt($('#AnimalHandlingFocus').html());
+
+			// Roll Dice
+			for (i = 0; i < dieNum; i++) {
+				rolls[i] = getRandomInt(1, 20);
+
+				if( rolls[i] <= focus){
+					dieNum += 1;
+				}
+			}
+
+			// Determine Successes and Complications
+			for (i = 0; i < dieNum; i++) {
+				$('#AnimalHandlingRolls').append(rolls[i] + " ");
+
+				if ( rolls[i] <= tn ){
+				 	successComplication[0] += 1;
+				} else if ( rolls[i] == 20 ){
+				 	successComplication[1] += 1;
+				} 
+			}
+
+			$('#AnimalHandlingResults').append(successComplication[0] + "S, ");
+			$('#AnimalHandlingResults').append(successComplication[1] + "C ");
+
+			$('#AnimalHandlingNd20').prop('selectedIndex',1);
+		}
+
 		// Discipline
     	if ($(this).attr('id') == "DisciplineSkill") {
     		//Erase Privious Roll

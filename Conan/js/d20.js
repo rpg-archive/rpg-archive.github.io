@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("td").click(function(){
+    $("tr").click(function(){
     	if ($(this).attr('id') == "MeleeHit") {
     		//Erase Privious Roll
 			$('#MeleeRolls').html(" ");

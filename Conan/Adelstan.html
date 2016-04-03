@@ -168,8 +168,8 @@
 								</td>
 							</tr>
 							<!-- Melee Hit -->
-							<tr>
-								<td  class="GreenCells" id="MeleeHit">
+							<tr id="MeleeHit">
+								<td  class="GreenCells">
 									Melee
 								</td>
 								<td class="HitParryRolls" id="MeleeRolls">
@@ -194,8 +194,8 @@
 								</td>	
 							</tr>
 
-							<tr>
-								<td  class="GreenCells" id="RangeHit">
+							<tr id="RangeHit">
+								<td  class="GreenCells" >
 									Ranged Weapon
 								</td>
 								<td class="HitParryRolls" id="RangeRolls">
@@ -220,8 +220,8 @@
 								</td>	
 							</tr>
 
-							<tr>
-								<td  class="GreenCells" id="ParryHit">
+							<tr id="ParryHit">
+								<td  class="GreenCells" >
 									Parry
 								</td>
 								<td class="HitParryRolls" id="ParryRolls">
@@ -268,8 +268,8 @@
 									Reach 2, Unbalanced
 								</td>	
 							</tr>
-							<tr>						
-								<td  class="LightGreenCellsLeft" id="BroadswordDMG">
+							<tr id="BroadswordDMG">						
+								<td  class="LightGreenCellsLeft" >
 									Damage 7 <img src="images\d6.jpg" alt="d6" style="width:12px;height:14px;">
 								</td>	
 								<td class="LightGreenCells" id="BroadswordRolls">
@@ -307,8 +307,8 @@
 									Reach 2, Unbalanced, Knockdown
 								</td>	
 							</tr>
-							<tr>						
-								<td  class="LightGreenCellsLeft"  id="ShieldDMG" >
+							<tr  id="ShieldDMG">						
+								<td  class="LightGreenCellsLeft" >
 									Damage 4 <img src="images\d6.jpg" alt="d6" style="width:12px;height:14px;">
 								</td>	
 								<td class="LightGreenCells" id="ShieldDMGRolls">
@@ -336,8 +336,8 @@
 							  		</select>
 								</td>	
 							</tr>
-							<tr>						
-								<td  class="LightGreenCellsLeft" id="ShieldSoak" >
+							<tr id="ShieldSoak">						
+								<td  class="LightGreenCellsLeft" >
 									Shield 4 <img src="images\d6.jpg" alt="d6" style="width:12px;height:14px;">
 								</td>	
 								<td class="LightGreenCells" id="ShieldSoakRolls">
@@ -375,8 +375,8 @@
 									Range M, Unbalanced, Unforgiving 1, Volley
 								</td>	
 							</tr>
-							<tr>						
-								<td  class="LightGreenCellsLeft"  id="LCrossbowDMG" >
+							<tr  id="LCrossbowDMG">						
+								<td  class="LightGreenCellsLeft" >
 									Damage 5 <img src="images\d6.jpg" alt="d6" style="width:12px;height:14px;">
 								</td>	
 								<td class="LightGreenCells" id="LCrossbowRolls">
@@ -414,8 +414,8 @@
 									Range C, Mental, Stun
 								</td>	
 							</tr>
-							<tr>						
-								<td  class="LightGreenCellsLeft"  id="SteelyGlareDMG" >
+							<tr  id="SteelyGlareDMG" >						
+								<td  class="LightGreenCellsLeft">
 									Damage 2 <img src="images\d6.jpg" alt="d6" style="width:12px;height:14px;">
 								</td>	
 								<td class="LightGreenCells" id="SteelyGlareRolls">
@@ -612,14 +612,14 @@
 								</td>	
 							</tr>
 
-							<tr class="Skills">
+							<tr class="Skills" id="InsightSkill">
 								<td>
 									Insight
 								</td>
-								<td class="Value">
+								<td class="Value" id="InsightTN">
 									11
 								</td>
-								<td class="Value">
+								<td class="Value" id="InsightFocus">
 									
 								</td>
 								<td class="LightGreenCells" id="InsightRolls">
@@ -648,14 +648,14 @@
 								</td>
 							</tr>	
 
-							<tr class="Skills">
+							<tr class="Skills" id="ObservationSkill">
 								<td>
 									Observation
 								</td>
-								<td class="Value">
+								<td class="Value" id="ObservationTN">
 									11
 								</td>
-								<td class="Value">
+								<td class="Value" id="ObservationFocus">
 									1
 								</td>
 								<td class="LightGreenCells" id="ObservationRolls">
@@ -684,14 +684,14 @@
 								</td>
 							</tr>
 
-							<tr class="Skills">
+							<tr class="Skills" id="SurvivalSkill">
 								<td>
 									Survival
 								</td>
-								<td class="Value">
+								<td class="Value" id="SurvivalTN">
 									11
 								</td>
-								<td class="Value">
+								<td class="Value" id="SurvivalFocus">
 									1
 								</td>
 								<td class="LightGreenCells" id="SurvivalRolls">
@@ -720,14 +720,14 @@
 								</td>
 							</tr>
 
-							<tr class="Skills">
+							<tr class="Skills" id="ThieverySkill">
 								<td>
 									Thievery
 								</td>
-								<td class="Value">
+								<td class="Value" id="ThieveryTN">
 									10
 								</td>
-								<td class="Value">
+								<td class="Value" id="ThieveryFocus">
 									
 								</td>
 								<td class="LightGreenCells" id="ThieveryRolls">
@@ -793,14 +793,14 @@
 								</td>									
 							</tr>
 
-							<tr class="Skills">
+							<tr class="Skills" id="AthleticsSkill">
 								<td>
 									Athletics
 								</td>
-								<td class="Value">
+								<td class="Value" id="AthleticsTN">
 									11
 								</td>
-								<td class="Value">
+								<td class="Value" id="AthleticsFocus">
 									1
 								</td>
 								<td class="LightGreenCells" id="AthleticsRolls">
@@ -829,14 +829,14 @@
 								</td>	
 							</tr>	
 
-							<tr class="Skills">
+							<tr class="Skills" id="ResistanceSkill">
 								<td>
 									Resistance
 								</td>
-								<td class="Value">
+								<td class="Value" id="ResistanceTN">
 									13
 								</td>
-								<td class="Value">
+								<td class="Value" id="ResistanceFocus">
 									3
 								</td>
 								<td class="LightGreenCells" id="ResistanceRolls">
@@ -944,14 +944,14 @@
 								</td>								
 							</tr>
 
-							<tr class="Skills">
+							<tr class="Skills" id="SailingSkill">
 								<td>
 									Sailing
 								</td>
-								<td class="Value">
+								<td class="Value" id="SailingTN">
 									10
 								</td>
-								<td class="Value">
+								<td class="Value" id="SailingFocus">
 									
 								</td>
 								<td class="LightGreenCells" id="SailingRolls">
@@ -1018,14 +1018,14 @@
 
 							</tr>
 
-							<tr class="Skills">
+							<tr class="Skills" id="AlchemySkill">
 								<td>
 									Alchemy
 								</td>
-								<td class="Value">
+								<td class="Value" id="AlchemyTN">
 									7
 								</td>
-								<td class="Value">
+								<td class="Value" id="AlchemyFocus">
 									
 								</td>
 								<td class="LightGreenCells" id="AlchemyRolls">
@@ -1054,14 +1054,14 @@
 								</td>
 							</tr>	
 
-							<tr class="Skills">
+							<tr class="Skills" id="CraftSkill">
 								<td>
 									Craft
 								</td>
-								<td class="Value">
+								<td class="Value" id="CraftTN">
 									7
 								</td>
-								<td class="Value">
+								<td class="Value" id="CraftFocus">
 									
 								</td>
 								<td class="LightGreenCells" id="CraftRolls">
@@ -1090,14 +1090,14 @@
 								</td>
 							</tr>
 
-							<tr class="Skills">
+							<tr class="Skills" id="HealingSkill">
 								<td>
 									Healing
 								</td>
-								<td class="Value">
+								<td class="Value" id="HealingTN">
 									8
 								</td>
-								<td class="Value">
+								<td class="Value" id="HealingFocus">
 									1
 								</td>
 								<td class="LightGreenCells" id="HealingRolls">
@@ -1126,14 +1126,14 @@
 								</td>
 							</tr>
 
-							<tr class="Skills">
+							<tr class="Skills" id="LinguisticsSkill">
 								<td>
 									Linguistics
 								</td>
-								<td class="Value">
+								<td class="Value" id="LinguisticsTN">
 									7
 								</td>
-								<td class="Value">
+								<td class="Value" id="LinguisticsFocus">
 									
 								</td>
 								<td class="LightGreenCells" id="LinguisticsRolls">
@@ -1162,14 +1162,14 @@
 								</td>
 							</tr>							
 
-							<tr class="Skills">
+							<tr class="Skills" id="LoreSkill">
 								<td>
 									Lore
 								</td>
-								<td class="Value">
+								<td class="Value" id="LoreTN">
 									9
 								</td>
-								<td class="Value">
+								<td class="Value" id="LoreFocus">
 									2
 								</td>
 								<td class="LightGreenCells" id="LoreRolls">
@@ -1198,14 +1198,14 @@
 								</td>
 							</tr>	
 
-							<tr class="Skills">
+							<tr class="Skills" id="SiegecraftSkill">
 								<td>
 									Siegecraft
 								</td>
-								<td class="Value">
+								<td class="Value" id="SiegecraftTN">
 									7
 								</td>
-								<td class="Value">
+								<td class="Value" id="SiegecraftFocus">
 									
 								</td>
 								<td class="LightGreenCells" id="SiegecraftRolls">
