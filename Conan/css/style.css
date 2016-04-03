@@ -177,6 +177,13 @@ td {
 	margin-left: 5pt;	
 }
 
+/*Tokens*/
+.Tokens{
+	width: 48%;
+	margin-right: 5pt;
+	margin-left: 5pt;	
+}
+
 /*Hit Parry*/
 .HitParry{
 	margin-right: 5pt;
