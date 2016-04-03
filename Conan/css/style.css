@@ -97,18 +97,16 @@ td {
 	font-size: 80%;
 }
 
-.CenterValue{
-	background-color: #E1E1D6;	
+	.CenterValue{
+		background-color: #E1E1D6;	
 
-	font-size: 80%;
-	
-	text-indent: 0pt;
-	text-align: center;"
-}
+		font-size: 80%;
+		
+		text-indent: 0pt;
+		text-align: center;
+	}
 
-.StressHarm{
-	background-color: rgb(225, 225, 214);	
-}
+
 
 #vigor1{
 	background-color: #E1E1D6;
@@ -123,6 +121,89 @@ td {
 	width: 20%;
 }
 
-/*	r63  g66  b11   h42 s171 l36
-	r255 g255 b213  h40 s40  l206
-	r231 g255 b207  h25 s80  l206*/
+
+/*Tables*/
+.BlackCells{
+	background-color: #000000;
+
+	color: white;
+	font-size: 100%;
+	text-indent: 0pt;
+	text-align: center;
+}
+.GreenCells{
+	background-color: #707442;
+
+	color: white;
+	font-size: 80%;
+}
+.LightGreenCells{
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+
+	text-indent: 0pt;
+	text-align: center;
+}
+
+/*Stress and Harm*/
+.StressHarm{
+	display: flex;	
+}
+.stressHarm{
+	background-color: rgb(225, 225, 214);	
+}
+.Stress{
+	width: 50%;
+	margin-right: 5pt;
+	margin-left: 5pt	
+}
+
+.Harms{
+	width: 50%;
+	margin-right: 5pt;
+	margin-left: 5pt	
+}
+
+/*Soak*/
+.Soak{
+	width: 48%;
+	margin-right: 5pt;
+	margin-left: 5pt;	
+}
+
+/*Hit Parry*/
+.HitParry{
+	margin-right: 5pt;
+	margin-left: 5pt;	
+}
+.HitParryRolls{
+	width: 25%;
+
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+
+	text-indent: 0pt;
+	text-align: center;
+}
+.HitParryResults{
+	width: 25%;
+
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+
+	text-indent: 0pt;
+	text-align: center;	
+}
+.HitParryNd20{
+	width: 9%;
+
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+
+	text-indent: 0pt;
+	text-align: center;	
+}
