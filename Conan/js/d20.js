@@ -121,6 +121,8 @@ $(document).ready(function(){
 			$('#ParryNd20').prop('selectedIndex',1);
 		}	
 
+	//Damage
+		//Broadsword
     	if ($(this).attr('id') == "BroadswordDMG") {
     		//Erase Privious Roll
 			$('#BroadswordRolls').html(" ");
@@ -155,6 +157,43 @@ $(document).ready(function(){
 
 			$('#BroadswordNd6').prop('selectedIndex',6);
 		}
+
+		//Spear
+    	if ($(this).attr('id') == "SpearDMG") {
+    		//Erase Privious Roll
+			$('#SpearRolls').html(" ");
+			$('#SpearResults').html(" ");
+			$('#debug').html(" ");
+
+			var rolls = [];
+			var successEvents = [0, 0];
+			var dieNum = parseInt($('#SpearNd6').val());
+
+			// Roll Dice
+			for (i = 0; i < dieNum; i++) {
+				rolls[i] = getRandomInt(1, 6);
+			}
+
+			// Determine Successes and Complications
+			for (i = 0; i < dieNum; i++) {
+				$('#SpearRolls').append(rolls[i] + " ");
+
+				if ( rolls[i] == 1 ){
+				  	successEvents[0] += 1;
+				} else if ( rolls[i] == 2 ){
+				  	successEvents[0] += 2;
+				} else if ( rolls[i] == 5 || rolls[i] == 6 ){
+				  	successEvents[0] += 1;	
+				  	successEvents[1] += 1;	
+				} 
+			}
+
+			$('#SpearResults').append(successEvents[0] + "S, ");
+			$('#SpearResults').append(successEvents[1] + "E ");
+
+			$('#SpearNd6').prop('selectedIndex',6);
+		}
+
 
 		// Damage Shield
     	if ($(this).attr('id') == "ShieldDMG") {
