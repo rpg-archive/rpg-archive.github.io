@@ -1,3 +1,9 @@
+
+/*The whole document*/
+* {  
+	font-family: 'Play', cursive;
+}
+
 body {
     background-color: rgb(220, 208, 194);
     max-width: 900px;
@@ -50,11 +56,16 @@ td {
 
 .top {
 	display: flex;
+	/*flex-wrap: wrap;*/
 }
 
 .CharacterName{
 	background-color: rgb(63, 66, 11);
 	color: white;
+}
+
+.CharacterNameDescription{
+	/*overflow: auto;*/
 }
 
 .AttributesSkills{
@@ -242,4 +253,31 @@ td {
 
 	text-indent: 0pt;
 	text-align: center;	
+}
+
+.ChanceOfSuccess{
+	width: 100%;
+
+	margin-top: 0px;
+	margin-bottom: 0px;	
+	margin-left: 18px;
+	margin-right: 5px;	
+
+    padding:; 0px;
+}
+
+.ChanceOfComplication{
+	width: 100%;
+
+	margin-top: 0px;
+	margin-bottom: 0px;	
+	margin-left: 18px;
+	margin-right: 5px;	
+
+    padding:; 0px;
+}
+
+@media only screen and (max-width: 300px){
+
+	
 }
