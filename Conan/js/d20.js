@@ -265,7 +265,7 @@ $(document).ready(function(){
 			$('#ShieldSoakRolls').append(" + 3 (Mail) ");
 			successEvents[0] += 3;
 
-			$('#ShieldSoakResults').append(successEvents[0] + "S, ");
+			$('#ShieldSoakResults').append(successEvents[0] + "S ");
 			//$('#ShieldSoakResults').append(successEvents[1] + "E ");
 
 			$('#ShieldSoakResults').prop('selectedIndex',3);
