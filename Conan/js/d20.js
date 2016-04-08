@@ -226,7 +226,7 @@ $(document).ready(function(){
 			}
 
 			$('#ShieldDMGResults').append(successEvents[0] + "S, ");
-			$('#ShieldDMGResults').append(successEvents[1] + "E ");
+			//$('#ShieldDMGResults').append(successEvents[1] + "E ");
 
 			$('#ShieldDMGResults').prop('selectedIndex',3);
 		}
