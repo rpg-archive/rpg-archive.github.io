@@ -119,6 +119,8 @@ function getRandomInt(tn, focus, diff, nd20) {
 	// [2] two success
 	var successProbability = [0, 0, 0];
 
+	if ( t < f ) f = t;
+
 	successProbability[0] = parseFloat(( 20.0 - t ) / 20.0);
 	successProbability[1] = parseFloat(( t - f ) / 20.0);
 	successProbability[2] = parseFloat(f / 20.0);
