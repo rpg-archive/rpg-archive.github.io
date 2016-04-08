@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // Initial Calculation on Page Load
-	clearCoSData();
+	clearCoCData();
 
 	$('#CoC11').append(getComplication(1, 1));
 	$('#CoC12').append(getComplication(1, 2));
@@ -35,7 +35,7 @@ $(document).ready(function(){
 });
 
 // Clear Data From Cells
-function clearCoSData() {
+function clearCoCData() {
 	$('#CoC11').html(" ");
 	$('#CoC12').html(" ");
 	$('#CoC13').html(" ");
