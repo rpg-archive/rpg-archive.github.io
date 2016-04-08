@@ -226,7 +226,7 @@ $(document).ready(function(){
 			}
 
 			$('#ShieldDMGResults').append(successEvents[0] + "S, ");
-			//$('#ShieldDMGResults').append(successEvents[1] + "E ");
+			$('#ShieldDMGResults').append(successEvents[1] + "E ");
 
 			$('#ShieldDMGResults').prop('selectedIndex',3);
 		}
@@ -266,7 +266,7 @@ $(document).ready(function(){
 			successEvents[0] += 3;
 
 			$('#ShieldSoakResults').append(successEvents[0] + "S, ");
-			$('#ShieldSoakResults').append(successEvents[1] + "E ");
+			//$('#ShieldSoakResults').append(successEvents[1] + "E ");
 
 			$('#ShieldSoakResults').prop('selectedIndex',3);
 		}
