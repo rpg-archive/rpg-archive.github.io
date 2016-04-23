@@ -1,0 +1,293 @@
+
+/*The whole document*/
+* {  
+	color: rgb(32, 66, 142);
+
+	/*font-family: 'Jura', sans-serif;*/
+
+	font-family: 'Orbitron', sans-serif;
+
+	/*font-family: 'Play', cursive;*/
+
+	/*rgb(224, 224, 236)
+	rgb(200, 200, 223)
+	rgb(32, 66, 142)*/
+}
+
+body {
+    background-color: rgb(233, 233, 242);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1{
+    margin-top: 0px;
+    padding-left: 12.2px;
+    padding-top: 6.1px;
+    margin-bottom: 0px;
+    padding-bottom: 6.1px;
+}
+
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+table{
+	border-collapse:collapse;
+	width: 100%;
+
+	margin-bottom: 10px;
+}
+
+tr{
+	max-height: 22px;
+
+	/*Inner Border*/
+	border-bottom-style: solid;
+	border-bottom-color:#FFFFFF;
+	border-bottom-width: 1px;	
+	border-top-style: solid;
+	border-top-color:#FFFFFF;
+	border-top-width: 1px;	
+}
+
+td {
+	height:  0px;
+
+    padding-top:  2px;
+    padding-left: 6px;
+
+	/*Inner Border*/
+	border-right-style: solid;
+	border-right-color:#FFFFFF;
+	border-right-width: 1px;	
+}
+
+.top {
+	display: flex;
+	/*flex-wrap: wrap;*/
+}
+
+.CharacterName{
+	background-color: rgb(63, 66, 11);
+	color: white;
+}
+
+.CharacterNameDescription{
+	/*overflow: auto;*/
+}
+
+.AttributesSkills{
+	/*display: flex;*/
+}
+
+.Combat{
+	display: flex;	
+}
+
+.Column{
+	width: 50%;
+	margin-right: 5pt;
+	margin-left: 5pt	
+}
+
+/*Table*/
+.Ability{
+	background-color: #000000;
+
+	color: white;
+	font-size: 100%;
+}
+
+.Value{
+	text-indent: 0pt;
+	text-align: center;"
+}
+
+.SkillTitleBar{
+	background-color: #707442;
+
+	color: white;
+	font-size: 80%;
+}
+
+.Skills{
+	background-color: #E1E1D6;
+
+	font-size: 80%;
+}
+
+	.CenterValue{
+		background-color: #E1E1D6;	
+
+		font-size: 80%;
+		
+		text-indent: 0pt;
+		text-align: center;
+	}
+
+
+
+#vigor1{
+	background-color: #E1E1D6;
+
+}
+
+.red-cell {
+   background: #F00; /* Or some other color */
+}
+
+.W1NumDice{
+	width: 20%;
+}
+
+
+/*Tables*/
+.BlackCells{
+	background-color: #000000;
+
+	color: white;
+	font-size: 100%;
+	text-indent: 0pt;
+	text-align: center;
+}
+.GreenCells{
+	background-color: #707442;
+
+	color: white;
+	font-size: 80%;
+}
+.LightGreenCells{
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+
+	text-indent: 0pt;
+	text-align: center;
+}
+.LightGreenCellsLeft{
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+}
+
+/*Stress and Harm*/
+.StressHarm{
+	display: flex;	
+}
+.stressHarm{
+	background-color: rgb(225, 225, 214);	
+}
+.Stress{
+	width: 50%;
+	margin-right: 5pt;
+	margin-left: 5pt	
+}
+
+.Harms{
+	width: 50%;
+	margin-right: 5pt;
+	margin-left: 5pt	
+}
+
+/*Soak*/
+.Soak{
+	width: 48%;
+	margin-right: 5pt;
+	margin-left: 5pt;	
+}
+
+/*Tokens*/
+.Tokens{
+	width: 48%;
+	margin-right: 5pt;
+	margin-left: 5pt;	
+}
+
+/*Hit Parry*/
+.HitParry{
+	margin-right: 5pt;
+	margin-left: 5pt;	
+}
+.HitParryRolls{
+	width: 25%;
+
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+
+	text-indent: 0pt;
+	text-align: center;
+}
+.HitParryResults{
+	width: 25%;
+
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+
+	text-indent: 0pt;
+	text-align: center;	
+}
+.HitParryNd20{
+	width: 9%;
+
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+
+	text-indent: 0pt;
+	text-align: center;	
+}
+
+/*Damage*/
+.DamageNd6{
+	width: 9%;
+
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+
+	text-indent: 0pt;
+	text-align: center;	
+}
+
+/*Damage*/
+.SkillNd6{
+	width: 9%;
+
+	background-color: rgb(225, 225, 214);
+
+	font-size: 80%;
+
+	text-indent: 0pt;
+	text-align: center;	
+}
+
+.ChanceOfSuccess{
+	width: 100%;
+
+	margin-top: 0px;
+	margin-bottom: 0px;	
+	margin-left: 18px;
+	margin-right: 5px;	
+
+    padding:; 0px;
+}
+
+.ChanceOfComplication{
+	width: 100%;
+
+	margin-top: 0px;
+	margin-bottom: 0px;	
+	margin-left: 18px;
+	margin-right: 5px;	
+
+    padding:; 0px;
+}
+
+@media only screen and (max-width: 300px){
+
+	
+}
