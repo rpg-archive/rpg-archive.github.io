@@ -1,22 +1,16 @@
 
 /*The whole document*/
 * {  
-	color: rgb(32, 66, 142);
-
-	/*font-family: 'Jura', sans-serif;*/
+	/*Font Color*/
+	/*color: rgb(32, 66, 142);*/
 
 	font-family: 'Orbitron', sans-serif;
-
-	/*font-family: 'Play', cursive;*/
-
-	/*rgb(224, 224, 236)
-	rgb(200, 200, 223)
-	rgb(32, 66, 142)*/
+	font-size: 100%;
 }
 
 body {
     background-color: rgb(233, 233, 242);
-    max-width: 900px;
+    max-width: 1044px;
     margin: 0 auto;
 }
 
@@ -64,9 +58,36 @@ td {
 	border-right-width: 1px;	
 }
 
-.top {
+/* 	1044 x 793 
+	344  x 793
+	349  x 793
+	349  x 793
+*/
+
+.page {
 	display: flex;
-	/*flex-wrap: wrap;*/
+}
+
+.col{
+	width: 33.3%;
+	margin-right: 1%;
+	margin-left:  1%;
+}
+
+/*Colors*/
+.blue{
+	background-color: rgb(32, 66, 142);
+}
+.grey{
+	background-color: rgb(200, 200, 223);
+}
+
+.ltgrey{
+	background-color: rgb(224, 224, 236);
+}
+
+.whiteText{
+	color: white;
 }
 
 .CharacterName{
